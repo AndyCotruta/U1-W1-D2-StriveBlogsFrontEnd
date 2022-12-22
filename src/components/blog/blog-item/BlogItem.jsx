@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import BlogAuthor from "../blog-author/BlogAuthor";
 import "./styles.css";
 const BlogItem = (props) => {
   const { title, cover, author, _id } = props;
+  useEffect(() => {
+    console.log(cover);
+    console.log(_id);
+  }, []);
   return (
     <Link to={`/blog/${_id}`} className="blog-link">
       <Card className="blog-card">
