@@ -3,7 +3,7 @@ import { Col, Image, Row } from "react-bootstrap";
 import "./styles.css";
 
 const BlogAuthor = (props) => {
-  const { name, avatar } = props;
+  const { avatar, firstName, lastName } = props;
   return (
     <Row className="d-flex align-items-center">
       <Col xs={2}>
@@ -11,7 +11,9 @@ const BlogAuthor = (props) => {
       </Col>
       <Col className="mx-3">
         <div>by</div>
-        <h6>{name}</h6>
+        <h6>
+          {firstName} {lastName}
+        </h6>
       </Col>
     </Row>
   );

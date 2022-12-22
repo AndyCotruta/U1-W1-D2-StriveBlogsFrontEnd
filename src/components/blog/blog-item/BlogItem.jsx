@@ -8,6 +8,7 @@ const BlogItem = (props) => {
   useEffect(() => {
     console.log(cover);
     console.log(_id);
+    console.log(author);
   }, []);
   return (
     <Link to={`/blog/${_id}`} className="blog-link">
