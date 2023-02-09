@@ -7,6 +7,7 @@ const Home = (props) => {
   return (
     <Container fluid="sm">
       <h1 className="blog-main-title">Welcome to the Epicode Blog!</h1>
+      <a href="http://localhost:3001/authors/googleLogin">Click here!</a>
       <BlogList />
     </Container>
   );

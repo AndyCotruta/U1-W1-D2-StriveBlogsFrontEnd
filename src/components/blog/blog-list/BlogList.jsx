@@ -7,7 +7,7 @@ const BlogList = (props) => {
 
   useEffect(() => {
     const fetchBlogs = async () => {
-      const apiUrl = process.env.REACT_APP_BE_URL;
+      const apiUrl = process.env.REACT_APP_API_BE_URL;
       let response = await fetch(`${apiUrl}/blogs`);
       try {
         if (response.ok) {
